@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تقرير الحضور اليومي - نظام كيم كام التعليمي</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <div class="logo">
+                <img src="./favicon/icon.png" alt="كيم كام" class="logo-img">
+            </div>
+            <div class="title">تقرير الحضور اليومي</div>
+            <div class="subtitle">نظام كيم كام التعليمي</div>
+        </div>
+
+        <div class="content">
+            <!-- Teacher and Date Information -->
+            <div class="info-section">
+                <div class="info-row">
+                    <span class="info-label">المعلم:</span>
+                    <span class="info-value">أستاذ أحمد محمد علي</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">التاريخ:</span>
+                    <span class="info-value">09/09/2025 - الاثنين</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">عدد الحصص:</span>
+                    <span class="info-value">6 حصص</span>
+                </div>
+            </div>
+
+            <!-- Summary Statistics -->
+            <div class="stats-summary">
+                <div class="stats-item present">
+                    <div class="stats-number" style="color: var(--green);">24</div>
+                    <div class="stats-label" style="color: var(--green);">الحاضرين</div>
+                </div>
+                <div class="stats-item late">
+                    <div class="stats-number" style="color: var(--warning);">3</div>
+                    <div class="stats-label" style="color: var(--warning);">المتأخرين</div>
+                </div>
+                <div class="stats-item absent">
+                    <div class="stats-number" style="color: var(--danger);">2</div>
+                    <div class="stats-label" style="color: var(--danger);">الغائبين</div>
+                </div>
+                <div class="stats-item compensate">
+                    <div class="stats-number" style="color: var(--info);">1</div>
+                    <div class="stats-label" style="color: var(--info);">التعويض</div>
+                </div>
+            </div>
+
+            <!-- Courses and Groups Details -->
+            <div class="course-section">
+                <div class="course-header">
+                    الرياضيات - الصف الثالث الثانوي
+                </div>
+
+                <div class="group-section">
+                    <div class="group-header">
+                        <span>المجموعة الأولى - الفصل 3أ</span>
+                        <span class="group-time">08:00 - 09:30</span>
+                    </div>
+
+                    <div class="attendance-grid">
+                        <!-- Present Students -->
+                        <div class="attendance-column present">
+                            <div class="attendance-header present-header">
+                                الحاضرين (8)
+                            </div>
+                            <ul class="student-list">
+                                <li class="student-item">
+                                    <span class="student-name">محمد أحمد السيد</span>
+                                    <span class="student-number">1</span>
+                                </li>
+                                <li class="student-item">
+                                    <span class="student-name">فاطمة علي حسن</span>
+                                    <span class="student-number">2</span>
+                                </li>
+                                <li class="student-item">
+                                    <span class="student-name">عبدالله محمود إبراهيم</span>
+                                    <span class="student-number">3</span>
+                                </li>
+                                <li class="student-item">
+                                    <span class="student-name">نور الدين محمد</span>
+                                    <span class="student-number">4</span>
+                                </li>
+                                <li class="student-item">
+                                    <span class="student-name">سارة أحمد فتحي</span>
+                                    <span class="student-number">5</span>
+                                </li>
+                                <li class="student-item">
+                                    <span class="student-name">يوسف علي محمود</span>
+                                    <span class="student-number">6</span>
+                                </li>
+                                <li class="student-item">
+                                    <span class="student-name">مريم حسن السيد</span>
+                                    <span class="student-number">7</span>
+                                </li>
+                                <li class="student-item">
+                                    <span class="student-name">أحمد محمد علي</span>
+                                    <span class="student-number">8</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Late Students -->
+                        <div class="attendance-column late">
+                            <div class="attendance-header late-header">
+                                المتأخرين (1)
+                            </div>
+                            <ul class="student-list">
+                                <li class="student-item">
+                                    <span class="student-name">خالد محمود أحمد</span>
+                                    <span class="student-number">1</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Absent Students -->
+                        <div class="attendance-column absent">
+                            <div class="attendance-header absent-header">
+                                الغائبين (1)
+                            </div>
+                            <ul class="student-list">
+                                <li class="student-item">
+                                    <span class="student-name">علي حسن محمد</span>
+                                    <span class="student-number">1</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Compensate Students -->
+                        <div class="attendance-column compensate">
+                            <div class="attendance-header compensate-header">
+                                التعويض (0)
+                            </div>
+                            <div class="no-students">لا يوجد طلاب</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group-section">
+                    <div class="group-header">
+                        <span>المجموعة الثانية - الفصل 3ب</span>
+                        <span class="group-time">10:00 - 11:30</span>
+                    </div>
+
+                    <div class="attendance-grid">
+                        <!-- Present Students -->
+                        <div class="attendance-column present">
+                            <div class="attendance-header present-header">
+                                الحاضرين (7)
+                            </div>
+                            <ul class="student-list">
+                                <li class="student-item">
+                                    <span class="student-name">أحمد يوسف محمود</span>
+                                    <span class="student-number">1</span>
+                                </li>
+                                <li class="student-item">
+                                    <span class="student-name">فاطمة السيد علي</span>
+                                    <span class="student-number">2</span>
+                                </li>
+                                <li class="student-item">
+                                    <span class="student-name">محمد حسن إبراهيم</span>
+                                    <span class="student-number">3</span>
+                                </li>
+                                <li class="student-item">
+                                    <span class="student-name">نورا أحمد فتحي</span>
+                                    <span class="student-number">4</span>
+                                </li>
+                                <li class="student-item">
+                                    <span class="student-name">عبدالرحمن علي محمد</span>
+                                    <span class="student-number">5</span>
+                                </li>
+                                <li class="student-item">
+                                    <span class="student-name">مريم محمود حسن</span>
+                                    <span class="student-number">6</span>
+                                </li>
+                                <li class="student-item">
+                                    <span class="student-name">يوسف أحمد السيد</span>
+                                    <span class="student-number">7</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Late Students -->
+                        <div class="attendance-column late">
+                            <div class="attendance-header late-header">
+                                المتأخرين (2)
+                            </div>
+                            <ul class="student-list">
+                                <li class="student-item">
+                                    <span class="student-name">خالد محمد علي</span>
+                                    <span class="student-number">1</span>
+                                </li>
+                                <li class="student-item">
+                                    <span class="student-name">سارة حسن محمود</span>
+                                    <span class="student-number">2</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Absent Students -->
+                        <div class="attendance-column absent">
+                            <div class="attendance-header absent-header">
+                                الغائبين (1)
+                            </div>
+                            <ul class="student-list">
+                                <li class="student-item">
+                                    <span class="student-name">علي أحمد فتحي</span>
+                                    <span class="student-number">1</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Compensate Students -->
+                        <div class="attendance-column compensate">
+                            <div class="attendance-header compensate-header">
+                                التعويض (1)
+                            </div>
+                            <ul class="student-list">
+                                <li class="student-item">
+                                    <span class="student-name">أحمد محمود حسن</span>
+                                    <span class="student-number">1</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Course -->
+            <div class="course-section">
+                <div class="course-header">
+                    الفيزياء - الصف الثالث الثانوي
+                </div>
+
+                <div class="group-section">
+                    <div class="group-header">
+                        <span>المجموعة الأولى - الفصل 3ج</span>
+                        <span class="group-time">12:00 - 13:30</span>
+                    </div>
+
+                    <div class="attendance-grid">
+                        <!-- Present Students -->
+                        <div class="attendance-column present">
+                            <div class="attendance-header present-header">
+                                الحاضرين (9)
+                            </div>
+                            <ul class="student-list">
+                                <li class="student-item">
+                                    <span class="student-name">محمد علي حسن</span>
+                                    <span class="student-number">1</span>
+                                </li>
+                                <li class="student-item">
+                                    <span class="student-name">فاطمة أحمد محمود</span>
+                                    <span class="student-number">2</span>
+                                </li>
+                                <li class="student-item">
+                                    <span class="student-name">عبدالله يوسف إبراهيم</span>
+                                    <span class="student-number">3</span>
+                                </li>
+                                <li class="student-item">
+                                    <span class="student-name">نور الدين السيد</span>
+                                    <span class="student-number">4</span>
+                                </li>
+                                <li class="student-item">
+                                    <span class="student-name">سارة محمود فتحي</span>
+                                    <span class="student-number">5</span>
+                                </li>
+                                <li class="student-item">
+                                    <span class="student-name">يوسف أحمد علي</span>
+                                    <span class="student-number">6</span>
+                                </li>
+                                <li class="student-item">
+                                    <span class="student-name">مريم حسن محمد</span>
+                                    <span class="student-number">7</span>
+                                </li>
+                                <li class="student-item">
+                                    <span class="student-name">أحمد علي محمود</span>
+                                    <span class="student-number">8</span>
+                                </li>
+                                <li class="student-item">
+                                    <span class="student-name">خالد محمد حسن</span>
+                                    <span class="student-number">9</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Late Students -->
+                        <div class="attendance-column late">
+                            <div class="attendance-header late-header">
+                                المتأخرين (0)
+                            </div>
+                            <div class="no-students">لا يوجد طلاب</div>
+                        </div>
+
+                        <!-- Absent Students -->
+                        <div class="attendance-column absent">
+                            <div class="attendance-header absent-header">
+                                الغائبين (0)
+                            </div>
+                            <div class="no-students">لا يوجد طلاب</div>
+                        </div>
+
+                        <!-- Compensate Students -->
+                        <div class="attendance-column compensate">
+                            <div class="attendance-header compensate-header">
+                                التعويض (0)
+                            </div>
+                            <div class="no-students">لا يوجد طلاب</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>تم إنشاء هذا التقرير تلقائياً بواسطة نظام كيم كام التعليمي</p>
+            <p>تاريخ الإنشاء: 09/09/2025 14:30</p>
+        </div>
+    </div>
+</body>
+</html>
